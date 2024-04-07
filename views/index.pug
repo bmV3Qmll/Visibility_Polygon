@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  div.sidebar
+    button(type="button" id='node') Node
+    button(type="button" id='line') Line
+    button(type="button" id='del') Delete
+    button(type="button" id='obs') Observer
+    p(id='input')
+    button(type="button" id='submit') Submit
+    p(id='output')
+  canvas
+  script(defer type='text/javascript' src='/javascripts/load.js')

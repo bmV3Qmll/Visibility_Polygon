@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  div.sidebar
+    button(type="button" id='node') Node
+    button(type="button" id='segment') Segment
+    button(type="button" id='polygon') Polygon
+    button(type="button" id='del') Delete
+    button(type="button" id='start') Start
+    p(id='startPos')
+    button(type="button" id='goal') Goal
+    p(id='goalPos')
+    button(type="button" id='submit') Submit
+    p(id='cost')
+  canvas
+  script(defer type='text/javascript' src='/javascripts/motion.js')
